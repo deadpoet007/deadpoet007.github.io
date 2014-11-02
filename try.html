@@ -2,11 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimmy</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <title>Find latitude and longitude with Google Maps</title>
     <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAgrj58PbXr2YriiRDqbnL1RSqrCjdkglBijPNIIYrqkVvD1R4QxRl47Yh2D_0C1l5KXQJGrbkSDvXFA"
       type="text/javascript"></script>
     <script type="text/javascript">
+
+
 
  function load() {
       if (GBrowserIsCompatible()) {
@@ -112,8 +120,40 @@ document.write(unescape("%3Cscript src='" + gs_p + "s.gstat.orange.fr/lib/gs.js?
 </script>
 </head>
 
+
   
 <body onload="load()" onunload="GUnload()" >
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-Jimmy-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">LEARN GEOGRAPHY</a>
+  </div>
+
+  <div class="collapse navbar-collapse navbar-right" id="bs-Jimmy-navbar-collapse-1">
+    <ul class="nav navbar-nav nav-tabs">
+      <li><a href="http://deadpoet007.github.io/index2.html" >HOME</a></li>
+      <li><a href="http://deadpoet007.github.io/try.html" >MAPS</a></li>
+      <li><a href="http://deadpoet007.github.io/quiz.html" >QUIZ</a></li>
+      <li><a href="#proj" >JAVA APP</a></li>
+      <li><a href="http://deadpoet007.github.io/try2.html" >NAVIGATE</a></li>
+
+          </ul>
+        </li>
+    </ul>
+
+
+  </div>
+</div>
+</nav>
+
+<div id="container">
    <p><b> Find coordinates by moving around the map</b></p> <p>1. Drag and drop the map to broad location. <br/>
   2. Zoom in for greater accuracy. <br/>
   3. Drag and drop the marker to pinpoint the place. The coordinates are refreshed at the end of each move.  </p>
@@ -157,4 +197,5 @@ Search Wikipedia:
 <input type="text" name="search" size="20" />
 <input type="submit" name="go" value="Go!" />
 </form>
+</div>
 </html>
